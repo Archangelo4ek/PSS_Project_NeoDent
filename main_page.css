@@ -76,8 +76,8 @@
   justify-content: center;
   gap: 40px;
   background-color: #E6F6FE;
-  padding: 40px;          /* внутренние отступы */
-  margin: 0 20px;         /* внешние отступы слева и справа */
+  padding: 40px;
+  margin: 0 20px;       
   border-radius: 16px;
   font-family: "General Sans", sans-serif;
 }
@@ -109,4 +109,29 @@
   font-size: 14px;
   color: #1376F8;
   text-decoration: none;
+}
+
+.welcome {
+  display: block;
+  margin: 0 60px;
+  font-family: "General Sans", sans-serif;
+  text-align: center;
+}
+
+.welcome-text h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.welcome-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.welcome-video video {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
 }
