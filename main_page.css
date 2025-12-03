@@ -46,3 +46,67 @@
   border: none;
   cursor: pointer;
 }
+
+.promo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "General Sans", sans-serif;
+}
+.promo-text {
+  margin-left: 20px;
+}
+.promo-text h1 {
+  font-size: 62px;
+  margin-bottom: 20px;
+}
+
+.promo-text p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.promo-image img {
+  max-width: 600px;
+  border-radius: 12px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #E6F6FE;
+  padding: 40px;          /* внутренние отступы */
+  margin: 0 20px;         /* внешние отступы слева и справа */
+  border-radius: 16px;
+  font-family: "General Sans", sans-serif;
+}
+
+.card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 64px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.card a {
+  font-size: 14px;
+  color: #1376F8;
+  text-decoration: none;
+}
