@@ -423,88 +423,79 @@
 }
 
 @media (max-width: 767px) {
-  .testimonials, .team, .services, .welcome, .promo {
-    padding: 20px;
-    margin: 12px;
-    border-radius: 12px;
-  }
-
+  .promo-text h1 { font-size: 36px; line-height: 1.08; }
+  .services h2 { font-size: 32px; }
+  .team h2 { font-size: 32px; }
+  .testimonials h2 { font-size: 32px; }
+  .card-services h3 { font-size: 18px; }
   .header {
-    margin: 12px;
-    padding: 12px;
-    height: auto;
-    border-radius: 12px;
+    margin: 12px; padding: 12px; height: auto; border-radius: 12px;
   }
-
   .header-inner {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
+    flex-direction: column; align-items: center; gap: 12px;
   }
-
-  .nd-nav {
-    flex-direction: column;
-    gap: 10px;
-    margin: 0;
-  }
-
-  .nd-cta {
-    padding: 8px 14px;
-    font-size: 15px;
-  }
+  .nd-nav { flex-direction: column; gap: 10px; margin: 0; }
+  .nd-cta { padding: 8px 14px; font-size: 15px; }
 
   .promo {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .promo-text h1 {
-    font-size: 36px;
-    line-height: 1.05;
+    flex-direction: column; align-items: center; text-align: center; gap: 16px;
   }
 
   .services {
-    flex-direction: column;
-    padding: 20px;
-    gap: 16px;
+    flex-direction: column; padding: 20px; gap: 16px;
   }
-
   .card-services {
-    width: 100%;
-    max-width: 520px;
-    margin: 0 auto;
+    width: 100%; max-width: 520px; margin: 0 auto; padding: 20px;
   }
 
   .carousel, .carousel-testimonials {
-    gap: 16px;
-    padding-bottom: 18px;
+    gap: 16px; padding-bottom: 18px; -webkit-overflow-scrolling: touch;
   }
-
   .card {
-    width: 90vw;
-    max-width: 420px;
-    aspect-ratio: 4 / 5;
+    width: 90vw; max-width: 420px; aspect-ratio: 4 / 5;
   }
-
   .card-testimonials {
-    width: 90vw;
-    max-width: 420px;
+    width: 90vw; max-width: 420px;
   }
+  .card-testimonials img { height: 200px; }
+}
 
-  .card-testimonials img {
-    height: 200px;
+@media (max-width: 400px) {
+  .promo-text h1 
+  { 
+    font-size: 30px; 
+    line-height: 1.06; 
   }
-
-  .footer {
-    padding: 24px 16px;
+  .services h2 
+  { 
+    font-size: 26px; 
   }
-
-  .footer-top {
-    gap: 12px;
+  .team h2 
+  { 
+    font-size: 26px; 
   }
-
-  .footer-nav {
-    gap: 12px;
+  .testimonials h2 { 
+    font-size: 26px; 
   }
+  .card-services h3 {
+     font-size: 17px;
+     }
+  .services { 
+    padding: 16px;
+    gap: 12px; 
+    background: none;
+    border-radius: 12px; 
+  }
+  .card-services {
+    width: 100%; max-width: 320px; margin: 0 auto; padding: 16px;
+    background: none; box-shadow: none;
+  }
+  .card-services p { font-size: 14px; }
+  .card-services a { font-size: 14px; }
+  .promo-image img { max-width: 80%; margin: 0 auto; display: block; }
+  .card { width: 88vw; max-width: 380px; }
+  .card-testimonials { width: 88vw; max-width: 360px; }
+  .card-testimonials img { height: 180px; }
+  .header-inner { flex-direction: column; align-items: center; gap: 10px; }
+  .nd-cta { margin-top: 8px; }
 }
