@@ -297,7 +297,6 @@
     gap: 8px;
   }
 
-  /* логотип/картинка, чтобы не занимала всю ширину */
   .header-inner img,
   .logo {
     max-width: 80%;
@@ -320,7 +319,6 @@
     word-break: break-word;
   }
 
-  /* крупные заголовки в about / секциях */
   .about-company h2,
   .about-company h3,
   .about-company h4 {
