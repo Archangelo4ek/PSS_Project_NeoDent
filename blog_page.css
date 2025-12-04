@@ -1,3 +1,66 @@
+.blog {
+  background: #fff;
+  padding: 20px 20px;
+  font-family: "General Sans", sans-serif;
+  text-align: center;
+}
+
+.blog h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.blog-intro {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.blog-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  width: 300px;
+  background: #F8FBFF;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.blog-card h3 {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.blog-card p {
+  font-size: 16px;
+  color: #333;
+}
+
 .header {
   background: #E6F6FE;
   border-radius: 12px;
@@ -47,57 +110,6 @@
   cursor: pointer;
 }
 
-.about-company {
-  background: #fff;
-  padding: 40px 20px;
-  font-family: "General Sans", sans-serif;
-  text-align: left;
-}
-
-.about-company h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.about-company h3 {
-  font-size: 20px;
-  color: #000000;
-  margin-bottom: 12px;
-}
-
-.about-company h4 {
-  font-size: 18px;
-  margin: 20px 0 10px;
-}
-
-.about-company p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 14px;
-  color: #333;
-}
-
-.about-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.about-text {
-  flex: 1 1 300px;
-}
-
-.about-image {
-  flex: 1 1 300px;
-}
-
-.about-image img {
-  width: 100%;
-  height: 600px;
-  border-radius: 12px;
-  display: block;
-}
 
 .footer {
   background-color: #fff;
@@ -159,65 +171,48 @@
   margin-top: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header {
-    height: auto;
-    margin: 12px;
     padding: 16px;
+    margin: 12px;
   }
 
   .header-inner {
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
   }
 
   .nd-nav {
     flex-direction: column;
-    gap: 12px;
-    margin: 0;
     align-items: center;
+    gap: 12px;
   }
 
-  .nd-cta {
-    padding: 8px 14px;
+  .blog {
+    padding: 30px 16px;
+  }
+
+  .blog h2 {
+    font-size: 28px;
+  }
+
+  .blog-intro {
     font-size: 15px;
   }
 
-
-  .about-company {
-    padding: 24px 16px;
-    text-align: center;
-  }
-
-  .about-company h2 {
-    font-size: 26px;
-  }
-
-  .about-company h3 {
-    font-size: 18px;
-  }
-
-  .about-company h4 {
-    font-size: 16px;
-  }
-
-  .about-company p {
-    font-size: 15px;
-  }
-
-  .about-grid {
+  .blog-grid {
     flex-direction: column;
     align-items: center;
   }
 
-  .about-image img {
-    height: auto;
-    max-height: 300px;
+  .blog-card {
+    width: 100%;
+    max-width: 360px;
   }
 
   .footer {
-    padding: 24px 16px;
+    padding: 30px 16px;
   }
 
   .footer-nav {
