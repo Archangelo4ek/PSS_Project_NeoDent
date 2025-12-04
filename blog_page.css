@@ -171,10 +171,12 @@
   margin-top: 10px;
 }
 
+/* уже есть: до 768px */
 @media (max-width: 768px) {
   .header {
     padding: 16px;
     margin: 12px;
+    height: auto;
   }
 
   .header-inner {
@@ -187,6 +189,7 @@
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    margin: 0;
   }
 
   .blog {
@@ -204,6 +207,7 @@
   .blog-grid {
     flex-direction: column;
     align-items: center;
+    gap: 18px;
   }
 
   .blog-card {
@@ -226,5 +230,123 @@
 
   .footer-bottom p {
     font-size: 13px;
+  }
+}
+
+/* доп. брейкпоинт: до 480px */
+@media (max-width: 480px) {
+  .header {
+    padding: 12px;
+    margin: 10px;
+  }
+
+  .nd-link {
+    font-size: 14px;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .nd-cta {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .blog {
+    padding: 24px 12px;
+  }
+
+  .blog h2 {
+    font-size: 24px;
+  }
+
+  .blog-intro {
+    font-size: 14px;
+  }
+
+  .blog-card {
+    max-width: 340px;
+    padding: 16px;
+  }
+
+  .blog-card h3 {
+    font-size: 17px;
+  }
+
+  .blog-card p {
+    font-size: 14px;
+  }
+
+  .blog-meta {
+    font-size: 13px;
+  }
+
+  .footer {
+    padding: 24px 12px;
+  }
+
+  .footer-nav a {
+    font-size: 14px;
+  }
+
+  .social-icons img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+}
+
+/* самый узкий: до 360px (включая 320–300px) */
+@media (max-width: 360px) {
+  .header {
+    padding: 10px 8px;
+    margin: 8px;
+  }
+
+  .header-inner {
+    gap: 8px;
+  }
+
+  .nd-nav {
+    gap: 8px;
+  }
+
+  .nd-link {
+    font-size: 13px;
+    line-height: 1.1;
+  }
+
+  .blog {
+    padding: 20px 10px;
+  }
+
+  .blog h2 {
+    font-size: 22px;
+  }
+
+  .blog-card {
+    max-width: 320px;
+    width: 100%;
+    padding: 14px;
+  }
+
+  .blog-card img {
+    height: 160px;
+  }
+
+  .blog-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .logo {
+    height: 48px;
   }
 }
